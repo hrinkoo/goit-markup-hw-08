@@ -1,0 +1,16 @@
+.user-data {
+    padding: 40px;
+}
+
+.user-data__desc {
+
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+
+    color: $title-text-color;
+
+    &--indent {
+        margin-bottom: 12px;
+    }
+}

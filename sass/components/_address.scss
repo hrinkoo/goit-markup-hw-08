@@ -1,0 +1,26 @@
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__item-link {
+    color: $secondary-text-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address__contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

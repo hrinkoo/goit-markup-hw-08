@@ -1,0 +1,49 @@
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/mixins';
+
+// Хедер
+
+@import './components/container';
+@import './components/logo';
+@import './components/nav';
+@import './components/nav-list';
+@import './components/link-contact';
+
+// Студія
+
+@import './components/main-screen';
+@import './components/main-button';
+@import './components/modal';
+@import './components/close-btn';
+@import './components/user-data';
+@import './components/form';
+
+@import './components/section';
+@import './components/features-list';
+
+@import './components/our-development';
+@import './components/work-list';
+
+@import './components/team';
+@import './components/our-team';
+@import './components/socials';
+
+@import './components/our-clients';
+
+// Футер
+
+@import './components/page-footer';
+@import './components/footer-container';
+@import './components/footer-logo';
+@import './components/address';
+@import './components/footer-social';
+@import './components/footer-subscribe';
+@import './components/form-footer';
+
+// Портфоліо
+
+@import './components/filter';
+@import './components/product';
+@import './components/portfolio-product';

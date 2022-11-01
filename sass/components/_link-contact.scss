@@ -1,0 +1,44 @@
+.link-contact {
+    display: flex;
+
+    &--append {
+        margin-left: auto;
+}
+}
+
+.link-contact__item {
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+.link-contact__link {
+    @include flexed($jc: none);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+    
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.link-contact__icon {
+    fill: currentColor;
+    display: inline-block;
+
+    &:hover {
+        fill: $accent-color;
+    }
+}
+
+.link-contact__icon--preppend {
+    margin-right: 10px;
+}

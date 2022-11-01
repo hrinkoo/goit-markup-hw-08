@@ -1,0 +1,28 @@
+.our-clients {
+    display: flex;
+
+    gap: 30px;
+}
+
+.our-clients__link {
+    @include flexed();
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid $link-color;
+    border-radius: 4px;
+
+    color: $link-color;
+
+    transition: color $animation, border-color $animation; 
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+}
+
+.our-clients__icon {
+    fill: currentColor;
+}

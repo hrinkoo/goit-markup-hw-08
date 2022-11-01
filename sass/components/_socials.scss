@@ -1,0 +1,34 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials__item {
+    @include flexed();
+}
+
+.socials__link {
+    @include flexed();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: $link-color;
+
+    transition: color $animation, background-color $animation;
+
+    &:hover,
+    &:focus {
+        color: $primary-bgr-color;
+        background-color: $accent-color;
+    }
+}
+
+.socials__icon {
+    fill: currentColor;
+}
+
+.footer-socials__link {
+    background-color: #ffffff1a;
+    color: $primary-bgr-color;
+}

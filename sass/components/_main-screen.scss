@@ -1,0 +1,33 @@
+.main-screen {
+  max-width: 1600px;
+  height: 600px;
+
+  background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
