@@ -9,9 +9,13 @@
 
     &__title {
         color: $title-text-color;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
+
+        @media screen and (min-width:$desktop) {
+            font-size: 36px;
+        }
     }
 
     &__title--indent {
