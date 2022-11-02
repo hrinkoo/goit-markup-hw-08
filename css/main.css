@@ -1020,8 +1020,40 @@ svg, img {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer-thumb {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 178px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-thumb {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 93px;
+    width: auto;
+  }
 }
 
 .footer-logo {
