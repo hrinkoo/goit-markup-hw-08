@@ -334,13 +334,27 @@ svg, img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -697,8 +711,14 @@ svg, img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section__title {
   color: #212121;
@@ -710,25 +730,39 @@ svg, img {
   margin-bottom: 50px;
 }
 
-.features-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
-.features-list__item {
-  width: calc((100% - 90px) / 4);
+.features-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
-.features-list__item__append {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
-.features-list__item__append:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features-list__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   color: #212121;
@@ -747,9 +781,15 @@ svg, img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 .features-list__subtitle--indent {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__subtitle {
+    text-align: left;
+  }
 }
 
 .features-list__desc {
