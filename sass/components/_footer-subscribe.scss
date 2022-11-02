@@ -1,5 +1,11 @@
 .footer-subscribe {
-    width: 570px;
+    max-width: 100%;
+    text-align: center;
+
+    @media screen and (min-width:$desktop) {
+        text-align: start;
+        width: 570px;
+    }
 
     &__title {
     color: $secondary-text-color;

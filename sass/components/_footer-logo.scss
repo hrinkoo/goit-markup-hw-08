@@ -1,6 +1,13 @@
 .footer-logo {
     display: block;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+
+    @media screen and (min-width:$desktop) {
+        text-align: start;
+        font-size: 26px;
+    }
 }
 
 .logo-footer {

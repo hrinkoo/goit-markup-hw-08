@@ -1,5 +1,18 @@
-.address__item:not(:last-child) {
-    margin-bottom: 9px;
+.address__item {
+    text-align: center;
+
+    &:not(:last-child) {
+            margin-bottom: 8px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        text-align: start;
+        
+        &:not(:last-child) {
+            margin-bottom: 9px;
+    }
+        
+    }
 }
 
 .address__item-link {
