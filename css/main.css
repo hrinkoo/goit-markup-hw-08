@@ -804,8 +804,14 @@ svg, img {
 }
 
 .our-development {
+  display: none;
   padding-top: 0;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .our-development {
+    display: contents;
+  }
 }
 
 .work-list {

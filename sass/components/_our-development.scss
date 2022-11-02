@@ -1,4 +1,10 @@
 .our-development {
+    display: none;
+
     padding-top: 0;
     padding-bottom: 94px;
+
+    @media screen and (min-width: $desktop) {
+        display: contents;        
+    }
 }
