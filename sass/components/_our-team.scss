@@ -1,11 +1,31 @@
 .our-team {
-    display: flex;
-    gap: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        gap: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
 }
 
 .our-team__item {
-    @include flexed($jc:none);
-    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include flexed($jc:none);
+        flex-direction: column;
+        flex-basis: calc((100% - 90px)/4);
+    }
     
     background-color: $primary-bgr-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

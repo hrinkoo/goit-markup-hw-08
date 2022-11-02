@@ -1,24 +1,24 @@
 .features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: 30px;
     
-    @media screen and (min-width: $tablet) {
-        display: flex;
+    
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 30px;
     }
     
     @media screen and (min-width: $desktop) {
-        display: flex;
-        gap: 30px;
-    
+        flex-direction: row;
     }
 }
 
 .features-list__item {
-    
-    &:not(:last-child) {
-            margin-bottom: 30px;
-        }
 
+ 
     @media screen and (min-width: $tablet) {
         flex-basis: calc((100% - 30px)/2);
     }
