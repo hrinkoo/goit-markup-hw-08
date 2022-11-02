@@ -887,10 +887,23 @@ svg, img {
 
 .our-team__item-box {
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-bottom: 24px;
+  padding-right: 122px;
+  padding-left: 122px;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .our-team__item-box {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__item-box {
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 
 .our-team__item-title {
