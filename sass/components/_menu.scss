@@ -33,7 +33,7 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    background-color: #3f51b5;
+    background-color: $primary-bgr-color;
     z-index: 999;
 
     transform: translateX(100%);
@@ -51,15 +51,37 @@
     color: #fff;
 }
 
+.menu-toggle__close {
+    fill: $title-text-color;
+    transition: fill $animation;
+
+    &:hover,
+    &focus {
+        fill: $accent-color;
+        transition: fill $animation;
+    }
+}
+
 .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+.mobile-menu__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+        margin-bottom: 34px;
+    }
+}
+
 .mobile-menu__link {
     display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+    color: $title-text-color;
 }
