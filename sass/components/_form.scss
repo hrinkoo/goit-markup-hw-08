@@ -140,7 +140,12 @@
 
 .form__checkbox-icon {
     position: absolute;    
+    opacity: 0;
     transition: opacity $animation;
+
+    .form__checkbox-default:checked + .form__checkbox-custom & {
+        opacity: 1;
+    }
 
 }
 
