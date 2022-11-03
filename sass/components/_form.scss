@@ -1,7 +1,11 @@
 .form {
     @include flexed($jc:none);
     flex-direction: column;
-    width: 448px;
+    width: 370px;
+
+    @media screen and (min-width:$desktop){
+        width: 448px;
+    }
 }
 
 .form__field {
@@ -65,9 +69,13 @@
     resize: none;
 
     width: 100%;
-    height: 120px;
+    height: 118px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width:$desktop) {
+        height: 120px;
+    }
 
     &::placeholder {
         font-size: 12px;
@@ -137,11 +145,17 @@
 }
 
 .form__checkbox-text {
-    width: 401px;
+    width: 346px;
 
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:$desktop) {
+        font-size: 14px;
+        line-height: 1.714;
+        width: 401px;
+    }
 }
 
 .form__checkbox-link {
