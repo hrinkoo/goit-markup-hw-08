@@ -67,9 +67,6 @@
 
 .mobile-menu {
     padding: 0;
-    // &--indent {
-    //     margin-bottom: 302px;
-    // }
     
 }
 
@@ -126,10 +123,7 @@
 
 .mobile-social {
     display: flex;
-
-    // &--indent {
-    //     margin-top: 62px;
-    // }
+    flex-wrap: wrap;
 }
 
 .mobile-social__item {
