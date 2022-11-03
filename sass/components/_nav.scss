@@ -1,9 +1,10 @@
 .nav {
-    @include flexed($jc:none);
+    @include flexed($jc:space-between);
+
 
     @media screen and (max-width:767px) {
         @include flexed($jc:space-between);
-        width: 100%;
+        width: 480px;
 
         &--indent {
             padding-top: 10px;
