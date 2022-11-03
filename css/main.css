@@ -425,6 +425,9 @@ img {
 
 .menu-container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
@@ -458,9 +461,6 @@ img {
 
 .mobile-menu {
   padding: 0;
-}
-.mobile-menu--indent {
-  margin-bottom: 302px;
 }
 
 .mobile-menu__item {
@@ -509,9 +509,6 @@ img {
 
 .mobile-social {
   display: flex;
-}
-.mobile-social--indent {
-  margin-top: 62px;
 }
 
 .mobile-social__item {

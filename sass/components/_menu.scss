@@ -28,6 +28,9 @@
 
 .menu-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vw;
@@ -64,9 +67,9 @@
 
 .mobile-menu {
     padding: 0;
-    &--indent {
-        margin-bottom: 302px;
-    }
+    // &--indent {
+    //     margin-bottom: 302px;
+    // }
     
 }
 
@@ -124,9 +127,9 @@
 .mobile-social {
     display: flex;
 
-    &--indent {
-        margin-top: 62px;
-    }
+    // &--indent {
+    //     margin-top: 62px;
+    // }
 }
 
 .mobile-social__item {
