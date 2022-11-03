@@ -8,13 +8,17 @@
 
 .menu-button__icon-close {
     display: none;
-
-    .menu-button.is-open & {
-        display: block;
-    }
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .menu-button__icon-close {
+    display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
     display: none;
+}
+
+.menu-container {
+    background-color: beige;
 }
  
