@@ -19,6 +19,18 @@
 }
 
 .menu-container {
-    background-color: beige;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+
+    &.is-open {
+        display: block;
+    }
 }
- 
