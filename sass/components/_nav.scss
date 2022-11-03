@@ -1,3 +1,8 @@
 .nav {
     @include flexed($jc:none);
+
+    @media screen and (max-width:767px) {
+        @include flexed($jc:space-between);
+        width: 100%;
+    }
 }
