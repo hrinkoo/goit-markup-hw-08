@@ -10,6 +10,13 @@
     }
 }
 
+.form-footer__label {
+    width: 100%;
+    @media screen and (min-width:$desktop){
+        width: auto;        
+    }
+}
+
 .form-footer__email {
     width: 100%;
 

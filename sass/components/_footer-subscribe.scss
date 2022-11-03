@@ -1,6 +1,10 @@
 .footer-subscribe {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
+
+    @media screen and (min-width:$mobile) {
+        max-width: 100%;
+    }
 
     @media screen and (min-width:$desktop) {
         text-align: start;

@@ -17,7 +17,7 @@
   padding-bottom: 200px;
 
   &__title {
-    width: auto;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     color: $secondary-text-color;
@@ -29,6 +29,10 @@
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media screen and (min-width:$mobile) {
+      width: 360px;
+    }
 
     @media screen and (min-width:$desktop) {
         width: 696px;

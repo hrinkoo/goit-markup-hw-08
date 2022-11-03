@@ -65,15 +65,12 @@
 .mobile-menu {
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
 .mobile-menu__item {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
     &:not(:last-child) {
@@ -84,4 +81,13 @@
 .mobile-menu__link {
     display: block;
     color: $title-text-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.mobile-contact {
+    margin-top: 302px;
 }

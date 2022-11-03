@@ -455,15 +455,12 @@ img {
 .mobile-menu {
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 .mobile-menu__item {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 .mobile-menu__item:not(:last-child) {
@@ -473,6 +470,13 @@ img {
 .mobile-menu__link {
   display: block;
   color: #212121;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+}
+
+.mobile-contact {
+  margin-top: 302px;
 }
 
 .nav-list {
@@ -603,7 +607,7 @@ img {
   padding-bottom: 200px;
 }
 .main-screen__title {
-  width: auto;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -615,6 +619,11 @@ img {
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .main-screen__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-screen__title {
@@ -1309,8 +1318,13 @@ img {
 }
 
 .footer-subscribe {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-subscribe {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
@@ -1337,6 +1351,15 @@ img {
   .form-footer {
     flex-direction: row;
     gap: 12px;
+  }
+}
+
+.form-footer__label {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .form-footer__label {
+    width: auto;
   }
 }
 
