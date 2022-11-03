@@ -17,17 +17,23 @@
   padding-bottom: 200px;
 
   &__title {
-    width: 696px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     color: $secondary-text-color;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media screen and (min-width:$desktop) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
   }
 }

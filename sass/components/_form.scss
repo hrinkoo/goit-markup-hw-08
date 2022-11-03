@@ -1,7 +1,7 @@
 .form {
     @include flexed($jc:none);
     flex-direction: column;
-    width: 370px;
+    width: 100%;
 
     @media screen and (min-width:$desktop){
         width: 448px;
@@ -96,7 +96,7 @@
 
 .form__checkbox {
     @include flexed();
-    width: 425px;
+    width: 100%;
     
     &--indent {
     margin-bottom: 30px;
