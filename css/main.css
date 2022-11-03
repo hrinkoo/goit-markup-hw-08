@@ -867,6 +867,11 @@ img {
   align-items: center;
   width: 100%;
 }
+@media screen and (max-width: 479px) {
+  .form__checkbox {
+    flex-wrap: wrap;
+  }
+}
 .form__checkbox--indent {
   margin-bottom: 30px;
 }
