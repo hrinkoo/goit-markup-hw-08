@@ -392,6 +392,10 @@ img {
     align-items: center;
     width: 100%;
   }
+  .nav--indent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .menu-toggle {

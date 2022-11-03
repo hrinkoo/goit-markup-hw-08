@@ -4,5 +4,10 @@
     @media screen and (max-width:767px) {
         @include flexed($jc:space-between);
         width: 100%;
+
+        &--indent {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     }
 }
