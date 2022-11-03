@@ -1,14 +1,23 @@
 .nav {
-    @include flexed($jc:space-between);
+    &--indent {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
-
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:479px) {
         @include flexed($jc:space-between);
-        width: 480px;
+        width: 100%;
+        
+    }
 
-        &--indent {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
+    @media screen and (min-width:$mobile) and (max-width:767px){
+        @include flexed($jc: space-between);
+        width: 480px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        @include flexed($jc: none);
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

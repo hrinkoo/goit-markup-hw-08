@@ -381,21 +381,33 @@ img {
   color: #000000;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav--indent {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 480px;
   }
-  .nav--indent {
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
