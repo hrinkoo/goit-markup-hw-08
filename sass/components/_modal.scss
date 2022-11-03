@@ -13,6 +13,11 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $animation;
 
+  @media screen and (max-width: 479px) {
+      width: 100%;
+      max-width: 450px;
+}
+
   @media screen and (min-width:$desktop) {
   width: 528px;
   height: 581px;

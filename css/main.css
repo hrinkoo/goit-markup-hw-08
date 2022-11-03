@@ -389,6 +389,11 @@ svg, img {
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button__icon-close {
   display: none;
@@ -396,6 +401,11 @@ svg, img {
 
 .menu-button.is-open .menu-button__icon-close {
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .menu-button.is-open .menu-button__icon-close {
+    display: none;
+  }
 }
 
 .menu-button.is-open .menu-button__icon-menu {
@@ -416,13 +426,30 @@ svg, img {
 .menu-container.is-open {
   display: block;
 }
-
-.nav-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+  }
 }
 
-.nav-list--append {
-  margin-left: 93px;
+.nav-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list--append {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list--append {
+    margin-left: 93px;
+  }
 }
 
 .nav-list__item + .nav-list__item {
@@ -461,14 +488,34 @@ svg, img {
 }
 
 .link-contact {
-  display: flex;
+  display: none;
 }
-.link-contact--append {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .link-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-contact {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link-contact--append {
+    margin-left: auto;
+  }
 }
 
-.link-contact__item + .link-contact__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link-contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-contact__item + .link-contact__item {
+    margin-left: 30px;
+  }
 }
 
 .link-contact__link {
@@ -559,6 +606,12 @@ svg, img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

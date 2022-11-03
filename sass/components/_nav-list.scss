@@ -1,9 +1,19 @@
 .nav-list {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width:$tablet) {
+        display: flex;
+    }
 }
 
 .nav-list--append {
-    margin-left: 93px;   
+    
+    @media screen and (min-width:$tablet) {
+        margin-left: 88px;
+    }
+    @media screen and (min-width:$desktop) {
+        margin-left: 93px;
+    }
 }
 
 .nav-list__item {
