@@ -513,7 +513,7 @@ img {
   display: block;
   color: #757575;
 }
-.mobile-contact__link:hover, .mobile-contact__linkfocus {
+.mobile-contact__link--phn {
   color: #2196f3;
   font-size: 34px;
   line-height: 1.17;
@@ -633,11 +633,17 @@ img {
   justify-content: none;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .link-contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .link-contact__link:hover, .link-contact__link:focus {
   color: #2196f3;
@@ -653,6 +659,19 @@ img {
 
 .link-contact__icon--preppend {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-contact__icon--envel {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-contact__icon--phn {
+    height: 16px;
+  }
 }
 
 .main-screen {
@@ -1529,7 +1548,7 @@ img {
 
 .filter__btn {
   color: #212121;
-  background-repeat: #f5f4fa;
+  background-color: #f5f4fa;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;

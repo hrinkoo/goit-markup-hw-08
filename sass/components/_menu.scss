@@ -104,6 +104,8 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
+    
+
     &:not(:last-child){
         margin-bottom: 32px;
     }
@@ -113,12 +115,18 @@
     display: block;
     color: $primary-text-color;
 
-    &:hover,
-    &focus {
+    &--phn {
         color: $accent-color;
         font-size: 34px;
         line-height: 1.17;
     }
+
+    // &:hover,
+    // &focus {
+    //     color: $accent-color;
+    //     font-size: 34px;
+    //     line-height: 1.17;
+    // }
 }
 
 .mobile-social {

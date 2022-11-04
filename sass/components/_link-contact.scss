@@ -37,13 +37,18 @@
     @include flexed($jc: none);
     
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
 
     color: $primary-text-color;
     
     transition: color $animation;
+
+    @media screen and (min-width:$desktop) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 
     &:hover,
     &:focus {
@@ -62,4 +67,17 @@
 
 .link-contact__icon--preppend {
     margin-right: 10px;
+}
+
+.link-contact__icon--envel {
+    @media screen and (min-width:$desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.link-contact__icon--phn {
+    @media screen and (min-width:$desktop) {
+        height: 16px;
+    }
 }
