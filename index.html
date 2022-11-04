@@ -255,12 +255,32 @@
           <h2 class="section__title section__title--indent">Наша команда</h2>
           <ul class="our-team">
             <li class="our-team__item">
-              <img
-                class="our-team__item-image"
-                src="./images/smilingworker.jpg"
-                alt="Фото продуктового дизайнера"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/smilingworker.jpg 1x, ./images/desk/igor-team-desk-270@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor-team-tabl-354@1x.jpg 1x,
+                    ./images/tablet/igor-team-tabl-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobl/igor-team-mob-450@1x.jpg 1x,
+                    ./images/mobl/igor-team-mob-450@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="our-team__item-image"
+                  src="./images/smilingworker.jpg"
+                  alt="Фото продуктового дизайнера"
+                />
+              </picture>
+
               <div class="our-team__item-box">
                 <h3 class="our-team__item-title">Ігор Дем'яненко</h3>
                 <p lang="en" class="our-team__item-desc">Product Designer</p>
@@ -302,12 +322,34 @@
             </li>
 
             <li class="our-team__item">
-              <img
-                class="our-team__item-image"
-                src="./images/smiling-frontend-dev.jpg"
-                alt="Фото фронтенд-розробниці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/smiling-frontend-dev.jpg       1x,
+                    ./images/desk/olga-team-desk-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga-team-tabl-354@1x.jpg 1x,
+                    ./images/tablet/olga-team-tabl-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobl/olga-team-mob-450@1x.jpg 1x,
+                    ./images/mobl/olga-team-mob-450@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="our-team__item-image"
+                  src="./images/smiling-frontend-dev.jpg"
+                  alt="Фото продуктового дизайнера"
+                />
+              </picture>
               <div class="our-team__item-box">
                 <h3 class="our-team__item-title">Ольга Рєпіна</h3>
                 <p lang="en" class="our-team__item-desc">Frontend Developer</p>
@@ -349,12 +391,35 @@
             </li>
 
             <li class="our-team__item">
-              <img
-                class="our-team__item-image"
-                src="./images/responsible-of-marketing.jpg"
-                alt="Фото відповідального за маркетинг"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/responsible-of-marketing.jpg    1x,
+                    ./images/desk/kolya-team-desk-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/kolya-team-tabl-354@1x.jpg 1x,
+                    ./images/tablet/kolya-team-tabl-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobl/kolya-team-mob-450@1x.jpg 1x,
+                    ./images/mobl/kolya-team-mob-450@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="our-team__item-image"
+                  src="./images/responsible-of-marketing.jpg"
+                  alt="Фото відповідального за маркетинг"
+                />
+              </picture>
+
               <div class="our-team__item-box">
                 <h3 class="our-team__item-title">Микола Тарасов</h3>
                 <p lang="en" class="our-team__item-desc">Marketing</p>
@@ -396,12 +461,35 @@
             </li>
 
             <li class="our-team__item">
-              <img
-                class="our-team__item-image"
-                src="./images/photo-of-UI-designer.jpg"
-                alt="Фото користувацького дизайнера"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo-of-UI-designer.jpg        1x,
+                    ./images/desk/misha-team-desk-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/misha-team-tabl-354@1x.jpg 1x,
+                    ./images/tablet/misha-team-tabl-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobl/misha-team-mob-450@1x.jpg 1x,
+                    ./images/mobl/misha-team-mob-450@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="our-team__item-image"
+                  src="./images/photo-of-UI-designer.jpg"
+                  alt="Фото користувацького дизайнера"
+                />
+              </picture>
+
               <div class="our-team__item-box">
                 <h3 class="our-team__item-title">Михайло Єрмаков</h3>
                 <p lang="en" class="our-team__item-desc">UI Designer</p>
